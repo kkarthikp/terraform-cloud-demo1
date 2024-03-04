@@ -1,6 +1,6 @@
 # Create Security Group - SSH Traffic
 resource "aws_security_group" "vpc-ssh" {
-  name        = "vpc-ssh-${terraform.workspace}"
+  name        = "vpc-ssh-port-${terraform.workspace}"
   description = "Dev VPC SSH"
   ingress {
     description = "Allow Port 22"
